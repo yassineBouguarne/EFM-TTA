@@ -7,7 +7,6 @@ try{
     $pdo = new PDO($dsn,$username,$password);
     $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
-    // echo"Good!!";
 }catch(PDOException $e){
     echo "Not Good!!" . $e->getMessage();
 }
